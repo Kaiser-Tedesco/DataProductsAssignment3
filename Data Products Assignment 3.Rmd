@@ -1,0 +1,17 @@
+---
+title: "Data Products Week 3 Assignment"
+author: "Andrew Kaiser-Tedesco"
+date: "July 16, 2018"
+output: html_document
+---
+
+``` {r}
+suppressPackageStartupMessages(library(plotly))
+data("swiss")
+
+
+p <- plot_ly(data = swiss, x = ~Education, y = ~Fertility, color = ~Catholic)
+p
+
+
+```
